@@ -19,61 +19,62 @@ import {
 const Dashboard = () => {
   const data = [
     {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+        "month": "Mar",
+        "investment": 100000,
+        "sell": 241,
+        "revenue": 104010
     },
     {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+        "month": "Apr",
+        "investment": 245000,
+        "sell": 423,
+        "revenue": 200000
     },
     {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+        "month": "May",
+        "investment": 670100,
+        "sell": 726,
+        "revenue": 600000
     },
     {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+        "month": "Jun",
+        "investment": 500000,
+        "sell": 529,
+        "revenue": 500050
     },
     {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+        "month": "Jul",
+        "investment": 600000,
+        "sell": 601,
+        "revenue": 509000
     },
     {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-  ];
+        "month": "Aug",
+        "investment": 700000,
+        "sell": 670,
+        "revenue": 610000
+    }
+];
   return (
     <div className="all-chart">
       <div>
+        <h1>MONTH WISE SELL</h1>
         <LineChart
           width={400}
           height={250}
           data={data}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="sell" stroke="#8884d8" />
+          {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
         </LineChart>
       </div>
       <div>
+        <h1>Investment VS Revenue</h1>
         <AreaChart
           width={400}
           height={250}
@@ -85,28 +86,32 @@ const Dashboard = () => {
             left: 20,
           }}
         >
-          <XAxis dataKey="uv" />
+          <XAxis dataKey="month" />
+          <CartesianGrid strokeDasharray="3 3" />
+
           <YAxis />
-          <Area dataKey="pv" stroke="#8884d8" fill="#8884d8" />
-          <Area dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+          <Area dataKey="investment" stroke="#8884d8" fill="#8884d8" />
+          <Area dataKey="revenue" stroke="#8884d8" fill="#8884d8" />
           <Tooltip />
         </AreaChart>
       </div>
       <div>
+      <h1>Investment VS Revenue</h1>
       <BarChart width={400} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+          <Bar dataKey="investment" fill="#8884d8" />
+          <Bar dataKey="revenue" fill="#82ca9d" />
         </BarChart>
       </div>
       <div>
+      <h1>Investment VS Revenue</h1>
         <PieChart width={400} height={250}>
-            <Pie data={data} dataKey="pv" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-            <Pie data={data} dataKey="uv" nameKey="name" cx="50%" cy="50%" innerRadius={60}   outerRadius={80} fill="#82ca9d" label />
+            <Pie data={data} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+            <Pie data={data} dataKey="revenue" nameKey="month" cx="50%" cy="50%" innerRadius={60}   outerRadius={80} fill="#82ca9d" label />
         </PieChart>
       </div>
     </div>
