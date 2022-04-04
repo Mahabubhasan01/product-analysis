@@ -22,17 +22,24 @@ const Home = () => {
             reprehenderit ex cum fuga. Voluptas quidem aliquid nulla excepturi
             necessitatibus molestias itaque laboriosam?
           </p>
-          <button>Learn More</button>
+          <button className="btn">Learn More</button>
         </div>
         <div>
           <h1>hello</h1>
           <img src="./flower.jpg" alt="" />
         </div>
       </div>
+      <div>
       <div className="comment">
-      {threeComment.map((comment) => <Comment 
+      {threeComment.map((comment) => 
+      <Comment 
       comment={comment}
-      ></Comment>)}
+      ></Comment>)
+      }
+      </div>
+      <div>
+          <button className="btn"><p className="btn-text">All Comment Here</p></button>
+      </div>
       </div>
     </div>
   );
