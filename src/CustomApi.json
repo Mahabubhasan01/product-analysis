@@ -1,0 +1,56 @@
+[
+    {
+        "chartName":"May",
+        "line":300,
+        "area":200000,
+        "pie":10245,
+        "img":"https://ibb.co/BzDhykT",
+        "text":"",
+        "name":"Sanvi Rahman"
+    },
+    {
+        "chartName":"Jun",
+        "line":600,
+        "area":400000,
+        "pie":22542,
+        "img":"https://ibb.co/6sWNq2B",
+        "text":"",
+        "name":"Rayhanul Islam"
+    },
+    {
+        "chartName":"Jul",
+        "line":900,
+        "area":600000,
+        "pie":33456,
+        "img":"https://ibb.co/zRwk5FF",
+        "text":"",
+        "name":"Kamrul Hasan"
+    },
+    {
+        "chartName":"Aug",
+        "line":1200,
+        "area":800000,
+        "pie":44563,
+        "img":"https://ibb.co/ypmGp7F",
+        "text":"",
+        "name":"Arfin Fuad"
+    },
+    {
+        "chartName":"Sep",
+        "line":1500,
+        "area":1000000,
+        "pie":55674,
+        "img":"https://ibb.co/K9cbYRR",
+        "text":"",
+        "name":"Adrita Chowdhury"
+    },
+    {
+        "chartName":"Oct",
+        "line":1800,
+        "area":1200000,
+        "pie":65467,
+        "img":"https://ibb.co/ZKXx0pb",
+        "text":"",
+        "name":"Atia Maisha"
+    }
+]

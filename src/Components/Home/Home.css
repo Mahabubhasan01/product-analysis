@@ -5,3 +5,12 @@
     font-weight: 700;
     font-size: large
 }
+.local-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
