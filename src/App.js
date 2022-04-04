@@ -10,9 +10,8 @@ import Error from './Components/Error/Error';
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
+      <Home></Home>
+      <Routes className=''>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>

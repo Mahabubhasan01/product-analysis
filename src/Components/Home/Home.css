@@ -1,0 +1,7 @@
+.menu-link{
+    text-decoration: none;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+    font-size: large
+}
