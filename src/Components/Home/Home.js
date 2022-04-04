@@ -1,45 +1,50 @@
-import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import CustomHook from "../../CustomHook/CustomHook";
 import Comment from "./Comment/Comment";
+import img from "./flower.jpg";
 import "./Home.css";
 
 const Home = () => {
   const [blogs, setBlogs] = CustomHook();
   const threeComment = blogs.slice(0, 3);
+  const naviGate = useNavigate();
 
   return (
-    <div>
+    <div className="home">
       <div className="local-home">
         <div>
-          <h1>This is best</h1>
           <h1>
-            <span>Choice your best</span>
+            <span>
+              A sign of beauty, A symbol of grace.
+               Its pride runs strong At a very fast pace!
+            </span>
           </h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
-            totam nesciunt nostrum dolores quae tenetur aliquid, cumque adipisci
-            labore provident id reiciendis eius esse explicabo sunt autem
-            reprehenderit ex cum fuga. Voluptas quidem aliquid nulla excepturi
-            necessitatibus molestias itaque laboriosam?
+            Flowers are a gift to this earth. As Gerard De Nerval once said,
+            “Every flower is a soul blossoming in nature.” They paint
+            contrasting colors along the ground and bring joy to many. Their
+            elegance and delicate touches have us all in awe and exhilaration.
+            This is often why flowers are seen as loving gifts for the special
+            people in our lives, and the reaction of the person receiving the
+            flowers is priceless.
           </p>
           <button className="btn">Learn More</button>
         </div>
-        <div>
-          <h1>hello</h1>
-          <img src="./flower.jpg" alt="" />
+        <div className="flower">
+          <img className="flower-img" src={img} alt="" />
         </div>
       </div>
       <div>
-      <div className="comment">
-      {threeComment.map((comment) => 
-      <Comment 
-      comment={comment}
-      ></Comment>)
-      }
-      </div>
-      <div>
-          <button className="btn"><p className="btn-text">All Comment Here</p></button>
-      </div>
+        <div className="comment reviews">
+          {threeComment.map((comment) => (
+            <Comment key={comment.id} comment={comment}></Comment>
+          ))}
+        </div>
+        <div>
+          <button onClick={() => naviGate("/Reviews")} className="btn">
+            <p className="btn-text">All Comment Here</p>
+          </button>
+        </div>
       </div>
     </div>
   );

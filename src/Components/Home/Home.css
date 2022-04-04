@@ -1,3 +1,4 @@
+
 .menu-link{
     text-decoration: none;
     margin-right: 10px;
@@ -8,10 +9,27 @@
 .local-home{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 300px;
+    grid-row-gap: 50px;
+    margin: 100px;
+    
 }
 .comment{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    margin-top: 100px;
+    margin: 100px;
+}
+.flower{
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgba(85, 26, 139, 1);
+    border-radius: 50%;
+    outline: 1px solid cornflowerblue;
+}
+.flower-img{
+    margin-top: 40px;
 }
 .btn{
     margin: 20px;
@@ -24,4 +42,8 @@
     padding: 2px;
     cursor: pointer;
     color: rgba(85, 26, 139, 1);
+}
+.btn:hover{
+    background-color: rgba(85, 26, 139, 1);
+    color: white;
 }

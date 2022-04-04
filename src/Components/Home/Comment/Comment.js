@@ -5,9 +5,9 @@ const Comment = ({comment}) => {
     const {name,img,text} = comment
     return (
         <div className='single-comment'>
-            <div>{name}</div>
-            <div>{img}</div>
-            <div></div>
+            <img className='card-img' src={img} alt="" />
+            <h3>{name}</h3>
+            <p>{text}</p>
         </div>
     );
 };

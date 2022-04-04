@@ -1,5 +1,5 @@
 .single-comment{
-    height: 250px;
+    height: 350px;
     width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -7,4 +7,15 @@
     width: 80%;
     margin: 20px;
 
+}
+.card-img{
+margin-top: -70px;
+border: none;
+width: 50%;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+}
+.single-comment p{
+    padding: 14px;
 }
