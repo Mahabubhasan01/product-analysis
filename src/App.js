@@ -18,7 +18,7 @@ function App() {
             <Link className='menu-link' to='/blogs'>Blogs</Link>
             <Link className='menu-link' to='/about'>About</Link>
             </nav>
-      <Routes className=''>
+      <Routes>
         <Route  path='/' element={<Home></Home>}></Route>
         <Route  path='/home' element={<Home></Home>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>

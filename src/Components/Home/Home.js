@@ -35,14 +35,17 @@ const Home = () => {
         </div>
       </div>
       <div>
+        <div>
+          <h1>Customer Reviews (3)</h1>
         <div className="comment reviews">
           {threeComment.map((comment) => (
             <Comment key={comment.id} comment={comment}></Comment>
           ))}
         </div>
+        </div>
         <div>
           <button onClick={() => naviGate("/Reviews")} className="btn">
-            <p className="btn-text">All Comment Here</p>
+            <p className="btn-text">See All Reviews</p>
           </button>
         </div>
       </div>
