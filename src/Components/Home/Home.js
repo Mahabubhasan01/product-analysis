@@ -14,7 +14,7 @@ const Home = () => {
       <div className="local-home">
         <div>
           <h1>
-            <span>
+            <span className="font-bold">
               A sign of beauty, A symbol of grace.
                Its pride runs strong At a very fast pace!
             </span>
@@ -37,7 +37,7 @@ const Home = () => {
       <div>
         <div>
           <h1>Customer Reviews (3)</h1>
-        <div className="comment !reviews">
+        <div className="comment reviews">
           {threeComment.map((comment) => (
             <Comment key={comment.id} comment={comment}></Comment>
           ))}

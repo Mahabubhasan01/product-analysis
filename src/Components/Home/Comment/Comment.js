@@ -5,12 +5,12 @@ const Comment = ({ comment }) => {
   const { name, img, text, ratting } = comment;
   return (
     <div>
-      <div className="single-comment">
+      <div className="three-comment reviews">
         <img className="sett-img" src={img} alt="" />
         <h3>{name}</h3>
         <p>{text}</p>
         <p className="flex justify-center items-center">
-          <span className="mr-3">Ratting : {ratting}</span>
+          <span className="mr-3 font-semibold">Ratting : {ratting}</span>
           <span className="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"

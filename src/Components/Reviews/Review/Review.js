@@ -1,15 +1,14 @@
 import React from "react";
-import { BeakerIcon } from "@heroicons/react/solid";
 
 const Review = ({ blog }) => {
   const { name, img, text, ratting } = blog;
   return (
-    <div className="single-comment reviews">
+    <div className="single-comment reviews ">
       <img className="set-img" src={img} alt="" />
       <h3>{name}</h3>
-      <p>{text}</p>
-      <p className="flex justify-center items-center">
-        <span className="mr-3">Ratting : {ratting}</span>
+      <p className="my-5">{text}</p>
+      <p className="flex justify-center items-center mt-10">
+        <span className="mr-3 font-semibold">Ratting : {ratting}</span>
         <span className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"

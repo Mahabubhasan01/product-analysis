@@ -1,5 +1,15 @@
 .single-comment{
-    height: 350px;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    margin: 20px;
+
+}
+.three-comment{
+    height: 370px;
     width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -12,19 +22,21 @@
 margin-top: -70px;
 border: none;
 width: 50%;
-height: 150px;
+height: 120px;
 margin-left: 73px;
 margin-bottom: 10px;
 border-radius: 50%;
 }
 .sett-img{
-/*     margin-top: 100px;
- */    border: none;
-    width: 50%;
-    height: 150px;
-    margin-left: 73px;
-    border-radius: 50%;
-    }
-.single-comment p{
+margin-top: -70px;
+border: none;
+width: 50%;
+height: 140px;
+margin-left: 73px;
+margin-bottom: 10px;
+border-radius: 50%;
+}
+
+.single-comment,.three-comment p{
     padding: 14px;
 }
