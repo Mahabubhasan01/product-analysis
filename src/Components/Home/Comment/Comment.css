@@ -8,14 +8,23 @@
     margin: 20px;
 
 }
-.card-img{
+.set-img{
 margin-top: -70px;
 border: none;
 width: 50%;
 height: 150px;
-object-fit: cover;
+margin-left: 73px;
+margin-bottom: 10px;
 border-radius: 50%;
 }
+.sett-img{
+/*     margin-top: 100px;
+ */    border: none;
+    width: 50%;
+    height: 150px;
+    margin-left: 73px;
+    border-radius: 50%;
+    }
 .single-comment p{
     padding: 14px;
 }

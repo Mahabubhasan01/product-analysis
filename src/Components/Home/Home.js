@@ -19,7 +19,7 @@ const Home = () => {
                Its pride runs strong At a very fast pace!
             </span>
           </h1>
-          <p>
+          <p className="my-5 ">
             Flowers are a gift to this earth. As Gerard De Nerval once said,
             “Every flower is a soul blossoming in nature.” They paint
             contrasting colors along the ground and bring joy to many. Their
@@ -28,7 +28,7 @@ const Home = () => {
             people in our lives, and the reaction of the person receiving the
             flowers is priceless.
           </p>
-          <button className="btn">Learn More</button>
+          <button className="btn bg-slate-200">Learn More</button>
         </div>
         <div className="flower">
           <img className="flower-img" src={img} alt="" />
@@ -37,15 +37,15 @@ const Home = () => {
       <div>
         <div>
           <h1>Customer Reviews (3)</h1>
-        <div className="comment reviews">
+        <div className="comment !reviews">
           {threeComment.map((comment) => (
             <Comment key={comment.id} comment={comment}></Comment>
           ))}
         </div>
         </div>
         <div>
-          <button onClick={() => naviGate("/Reviews")} className="btn">
-            <p className="btn-text">See All Reviews</p>
+          <button onClick={() => naviGate("/Reviews")} className="btn bg-slate-200">
+            <p className="btn-text ">See All Reviews </p><span></span>
           </button>
         </div>
       </div>

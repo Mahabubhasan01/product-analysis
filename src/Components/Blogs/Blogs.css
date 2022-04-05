@@ -16,6 +16,11 @@
     padding: 10px;
     letter-spacing:1px ;
 }
+h3{
+    color: rgba(85, 26, 139, 1);
+    font-size:larger;
+    font-weight: 500;
+}
 @media only screen and (min-width: 600px) {
     .blogs{
         /* display: block; */
